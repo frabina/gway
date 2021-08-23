@@ -1,0 +1,28 @@
+<%= form_with(model: client, local: true) do |form| %>
+<h1>New clients</h1>
+ <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+   <div class="field">
+    <%= form.label :user_name %>
+    <%= form.text_field :user_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :password %>
+    <%= form.text_field :password %>
+  </div>
+
+   <div class="field">
+    <%= form.label :additional_info %>
+    <%= form.text_field :additional_info %>
+  </div>
+
+
+  <div class="actions">
+    <%= form.submit 'log in' %>
+  </div>
+
+ <% end %>
